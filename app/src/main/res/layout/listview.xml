@@ -2,7 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_layout"/>
 
 
     <RelativeLayout
@@ -24,6 +27,7 @@
             android:layout_height="wrap_content"
             android:src="@drawable/plus"
             android:layout_gravity="right"
+            android:id="@+id/imgbtn"
             android:layout_alignParentRight="true"/>
     </RelativeLayout>
 
@@ -31,6 +35,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listView"
+        android:onClick="onclick2"
         android:layout_gravity="center_horizontal" />
+
+
 
 </LinearLayout>

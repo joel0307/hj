@@ -3,7 +3,10 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
-
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_layout"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,6 +71,8 @@
         android:id="@+id/receipt"
         android:src="@drawable/x"
         android:layout_weight="0.32" />
+
+
 
 
 </LinearLayout>

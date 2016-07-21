@@ -41,6 +41,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/editText1"
+        android:maxLength="50"
+        android:inputType="text"
         android:layout_alignBottom="@+id/imageView"
         android:layout_marginBottom="60dp"
         android:layout_alignEnd="@+id/editText2"
@@ -56,13 +58,16 @@
         android:layout_marginTop="58dp"
         android:layout_below="@+id/editText2"
         android:layout_alignStart="@+id/imageView"
-        android:onClick="onclick1"/>
+        android:onClick="onclick1"
+        android:textSize="30dp" />
 
     <EditText
         android:layout_width="216dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:id="@+id/editText2"
+        android:maxLength="300"
+        android:inputType="textPassword"
         android:layout_alignTop="@+id/imageView"
         android:layout_centerHorizontal="true" />
 
@@ -82,4 +87,6 @@
        android:layout_alignStart="@+id/button"
        android:layout_marginBottom="67dp"
        android:layout_alignEnd="@+id/button" />
+
+
 </RelativeLayout>
