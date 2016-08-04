@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.user.thursdayam">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -20,6 +21,7 @@
         </activity>
         <activity android:name=".List_Activity"></activity>
         <activity android:name=".MainList_Activity"></activity>
+        <activity android:name=".ListAdd_Activity"></activity>
 
     </application>
 

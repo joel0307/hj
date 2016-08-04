@@ -29,16 +29,18 @@
         android:text="2,000"
         android:id="@+id/money1"
         android:layout_gravity="right" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="사용일자"
-        android:id="@+id/whenday"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2016-07-26"
+        android:text="사용일자"
         android:id="@+id/whenday1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/whenday"
+        android:text="날짜선택"
+        android:onClick="showDatePickerDialog" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -71,8 +73,5 @@
         android:id="@+id/receipt"
         android:src="@drawable/x"
         android:layout_weight="0.32" />
-
-
-
 
 </LinearLayout>
