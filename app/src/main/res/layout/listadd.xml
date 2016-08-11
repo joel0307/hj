@@ -1,12 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
     <include
-        android:layout_width="match_parent"
+        android:layout_width="510dp"
         android:layout_height="wrap_content"
         layout="@layout/toolbar_layout"/>
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/iv_RightButton"
+    android:onClick="toolbarButtonClick"
+    android:src="@android:drawable/ic_menu_save"
+    android:padding="10dp"
+    android:layout_gravity="right|center_vertical" />
+</FrameLayout>
+
+
+
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,7 +35,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="스타벅스 종로점"
+        android:hint="스타벅스 종로점"
         android:id="@+id/whereby"/>
     <TextView
         android:layout_width="wrap_content"
@@ -26,7 +45,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2,000"
+        android:hint="너가 쓴 금액"
         android:id="@+id/money1"
         android:layout_gravity="right" />
     <EditText
@@ -49,7 +68,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="적요"
+        android:hint="적요"
         android:id="@+id/memo1"/>
    <TextView
        android:layout_width="wrap_content"
